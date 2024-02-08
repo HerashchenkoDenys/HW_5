@@ -1,0 +1,14 @@
+function pow(x, y) {
+    let result = 1;
+    let absExponent = Math.abs(y);
+    for (let i = 0; i < absExponent; i++) {
+        result *= x;
+    }
+    if (y < 0) {
+        result = 1 / result;
+    }
+    return result;
+}
+
+const result = pow(3, 3)
+console.log(result)
